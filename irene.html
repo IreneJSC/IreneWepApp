@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Irene J.S Choi</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" type="text/css" href="./style/main2.css">
+    <link rel="stylesheet" type="text/css" href="./style/irene.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <meta name="robots" content="noindex,follow" />
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <div class="navigation">
+      <div class="navigation-left">
+        <a href="index.html">Home</a>
+        <a href="irene.html">Irene</a>
+        <a href="#">Data Analysis</a>
+        <a href="#">Web App</a>
+        <a href="#">Software</a>
+      </div>
+      <div class="navigation-right">
+        <a href="#"><img src="images/shopping-bag.png" alt=""></a>
+      </div>
+    </div>
+
+    <div class="container" id="Irene">
+      <div id="mainC">
+        <div id="vue-instance">
+
+          <div id="listStyle">
+            <div>
+              <exolist :exercises='exercises' :activeexo='activeexo'></exolist>
+            </div>
+          </div>
+
+          <div id="contentStyle">
+            <div>
+              <exocontent :exercises='exercises' :activeexo='activeexo'></exocontent>
+            </div>
+          </div> <!-- contentExoStyle -->
+
+        </div> <!-- vue-instance -->
+      <template id="exolist">
+        <div class="list-group">
+          <a class="list-group-item listExo" v-for="exercise in exercises" href="#" v-on:click="switchexo(exercise)" v-bind:class="{active: exercise.position == activeexo.position}">
+            <h4 class="list-group-item-heading"> {{ exercise.position }}</h4>
+          </a>
+        </div> <!-- list-group -->
+      </template>
+      <template id="exocontent">
+        <ul id="GactiveExo">
+          <li v-for="GactiveExo in activeexo.Gcontent">{{ GactiveExo.action }}</li>
+        </ul>
+        <div id="activeExo" v-for="activeExo in activeexo.content">
+          <div id="exoDesc" class="C{{ activeExo.multi }}">
+            <h3>{{ activeExo.description }}</h3>
+            <h4>{{ activeExo.total }}</h4>
+            <p>{{ activeExo.repitition }}</p>
+            <p>{{ activeExo.time }}</p>
+            <p>{{ activeExo.startP }}</p>
+            <p>{{ activeExo.action }}</p>
+            <p>{{ activeExo.key }}</p>
+          </div>
+          <div id="exoMulti" class="M{{ activeExo.multi }}">
+            <img class="I{{ activeExo.multi }}" v-for="media in activeExo.multi1" title="{{ media.caption }}" alt="{{ media.caption }}" src="{{ media.image }}" />
+            <img class="I{{ activeExo.multi }}" v-for="media in activeExo.multi2" title="{{ media.caption }}" alt="{{ media.caption }}" src="{{ media.image }}" />
+            <img class="I{{ activeExo.multi }}" v-for="media in activeExo.multi3" title="{{ media.caption }}" alt="{{ media.caption }}" src="{{ media.image }}" />
+          </div> <!-- exoMulti -->
+        </div> <!-- activeExo -->
+      </template>
+    </div>
+  </div>
+
+    <!-- Scripts -->
+    <script src="app.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/vue/1.0.16/vue.js"></script>
+    <script src="./javascript/irene.js" type="text/javascript"></script>
+  </body>
+
+</html>
