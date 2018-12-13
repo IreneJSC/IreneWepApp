@@ -1,0 +1,135 @@
+/*
+  University of Queensland, The Occupational Health and Safety Division
+	license: DECO7381 Team X-People
+	https://xpeople.uqcloud.net/
+*/
+
+.expand-transition {
+  transition: all .2s ease;
+  height: 30px;
+  padding: 10px;
+  margin: 0;
+  background-color: #eee;
+  overflow: hidden;
+}
+
+.expand-enter, .expand-leave {
+  height: 0;
+  padding: 0 10px;
+  opacity: 0;
+}
+
+.panel-body {
+  height: 100px;
+}
+
+#GactiveExo li:first-child{
+  padding-top: 5%;
+}
+
+.listExo{
+  padding: 2%;
+}
+
+.list-group a{
+  color: #0033cc;
+}
+
+.list-group a:hover{
+  text-indent: 2%;
+  color: #003399;
+}
+
+#mainC{
+  width: 90%;
+  margin-top: 10%;
+  margin-bottom: 15%;
+  margin-left: 5%;
+  margin-right: 5%;
+  min-height: 50%;
+  max-height: 80%;
+  background-color: white;
+}
+
+
+.panel-group {
+  margin-left: 8%;
+}
+
+#listStyle {
+  float: left;
+  width: 15%;
+  margin-bottom: 2%;
+  margin-right: 3%;
+}
+
+.list-group {
+  position: fixed;
+  width: 17%;
+  top: 20%;
+  left: 7%;
+}
+
+#exerciseHeader {
+  margin-top: 92px;
+}
+
+#contentStyle {
+width: 80%;
+float: left;
+padding-left: 5%;
+
+margin-bottom: 2%;
+}
+
+#exoDesc, #activeExo{
+  float: left;
+}
+
+#exoMulti img {
+  vertical-align: middle;
+  width:200px;
+  height:300px;
+}
+
+#activeExo{
+  margin: 20px;
+}
+#exoMulti{
+  float: left;
+  padding-top: 4%;
+  padding-left: 5%;
+}
+
+.Cmulti1  {
+  width: 67%;
+}
+.Mmulti1 {
+  width: 33%;
+}
+.Imulti1 {
+  width: 100%;
+}
+.Cmulti2 {
+  width: 40%;
+}
+.Mmulti2 {
+  width: 60%;
+}
+.Imulti2 {
+  width: 50%;
+}
+.Cmulti3  {
+  width: 25%;
+}
+.Mmulti3 {
+  width: 75%;
+}
+.Imulti3 {
+  width: 33%;
+}
+
+.active {
+  background-color: #dfe5de !important;
+  color: black !important;
+}

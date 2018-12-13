@@ -1,0 +1,110 @@
+/*
+  University of Queensland, The Occupational Health and Safety Division
+	license: DECO7381 Team X-People
+	https://xpeople.uqcloud.net/
+*/
+
+.fade-transition {
+  transition: opacity 0.1s ease;
+}
+
+.fade-enter, .fade-leave {
+  opacity: 0;
+}
+
+.panel panel-default {
+      padding: 70px;
+}
+
+.jumbotron {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(../static/images/computer_workstation.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+}
+
+.display-3 {
+  color: #fff !important;
+}
+
+#solution {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(../static/images/SC.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 250px;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+}
+
+#solution-text {
+  color: #fff;
+  font-size: 1.7vw;
+}
+
+#exercise {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(../static/images/Exe.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 250px;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+}
+
+#exercise-text {
+  color: #fff;
+  font-size: 1.7vw;
+}
+
+.buttonOverwritte{
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}
+
+.middle-context {
+  padding-top: 86px;
+}
+
+#container_x {
+  margin-top: 100px;
+}
+
+#main_container {
+  min-height: 88.5%;
+}
+
+
+.MainContent{
+  width: 60%;
+  margin-top: 100px;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 3%;
+}
+
+/** FOOTER **/
+#footer{
+  background:#49075e;
+  width:100%;
+  position: relative;
+  float:left;
+  bottom:0;
+  left:0;
+}
+.wrapper {
+    position: relative;
+    top: 0pt;
+    margin: 0 auto;
+    width: 80%;
+}
